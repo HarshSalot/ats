@@ -1,49 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="3" passed="2">
+<testng-results skipped="0" failed="1" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46845" started-at="2019-12-28T07:07:03Z" finished-at="2019-12-28T07:07:50Z">
+  <suite name="Suite" duration-ms="230956" started-at="2020-01-16T10:08:15Z" finished-at="2020-01-16T10:12:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46845" started-at="2019-12-28T07:07:03Z" finished-at="2019-12-28T07:07:50Z">
-      <class name="com.ats.test.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ats.test.HomePageTest@546a03af]" name="setUp" is-config="true" duration-ms="11819" started-at="2019-12-28T02:07:03Z" finished-at="2019-12-28T02:07:15Z">
+    <test name="Test" duration-ms="230956" started-at="2020-01-16T10:08:15Z" finished-at="2020-01-16T10:12:06Z">
+      <class name="com.ats.test.NewProjectPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.ats.test.NewProjectPageTest@6833ce2c]" name="setup" is-config="true" duration-ms="15233" started-at="2020-01-16T05:09:41Z" finished-at="2020-01-16T05:09:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="newProject()[pri:1, instance:com.ats.test.HomePageTest@546a03af]" name="newProject" duration-ms="277" started-at="2019-12-28T02:07:15Z" finished-at="2019-12-28T02:07:15Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyprojectTitleDetail()[pri:1, instance:com.ats.test.NewProjectPageTest@6833ce2c]" name="verifyprojectTitleDetail" duration-ms="129147" started-at="2020-01-16T05:09:56Z" description="fill step 1" finished-at="2020-01-16T05:12:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newProject -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ats.test.HomePageTest@546a03af]" name="tearDown" is-config="true" duration-ms="715" started-at="2019-12-28T02:07:15Z" finished-at="2019-12-28T02:07:16Z">
+        </test-method> <!-- verifyprojectTitleDetail -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ats.test.NewProjectPageTest@6833ce2c]" name="tearDown" is-config="true" duration-ms="728" started-at="2020-01-16T05:12:05Z" finished-at="2020-01-16T05:12:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ats.test.HomePageTest@546a03af]" name="setUp" is-config="true" duration-ms="11092" started-at="2019-12-28T02:07:16Z" finished-at="2019-12-28T02:07:27Z">
+      </class> <!-- com.ats.test.NewProjectPageTest -->
+      <class name="com.ats.test.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ats.test.HomePageTest@6ea6d14e]" name="setUp" is-config="true" duration-ms="20626" started-at="2020-01-16T05:08:15Z" finished-at="2020-01-16T05:08:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyHomePageHeader()[pri:1, instance:com.ats.test.HomePageTest@546a03af]" name="verifyHomePageHeader" duration-ms="10186" started-at="2019-12-28T02:07:27Z" finished-at="2019-12-28T02:07:37Z">
+        <test-method status="PASS" signature="newProject()[pri:1, instance:com.ats.test.HomePageTest@6ea6d14e]" name="newProject" duration-ms="556" started-at="2020-01-16T05:08:35Z" finished-at="2020-01-16T05:08:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newProject -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ats.test.HomePageTest@6ea6d14e]" name="tearDown" is-config="true" duration-ms="1130" started-at="2020-01-16T05:08:36Z" finished-at="2020-01-16T05:08:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ats.test.HomePageTest@6ea6d14e]" name="setUp" is-config="true" duration-ms="11884" started-at="2020-01-16T05:08:37Z" finished-at="2020-01-16T05:08:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyHomePageHeader()[pri:1, instance:com.ats.test.HomePageTest@6ea6d14e]" name="verifyHomePageHeader" duration-ms="10502" started-at="2020-01-16T05:08:49Z" finished-at="2020-01-16T05:09:00Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for title to contain "Dashboard". Current title: "Spec Tool" (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-O680H5P2', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+System info: host: 'LAPTOP-O680H5P2', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.16 (93fcc21110c10..., userDataDir: C:\Users\HPUSER~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60314}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 88e754bb0522f6cb69b875f19bf219f7]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.16 (93fcc21110c10..., userDataDir: C:\Users\HPUSER~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62076}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 502fd0a6280c0dea3eb85ce23755ce76]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "Dashboard". Current title: "Spec Tool" (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-O680H5P2', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+System info: host: 'LAPTOP-O680H5P2', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.16 (93fcc21110c10..., userDataDir: C:\Users\HPUSER~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60314}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 88e754bb0522f6cb69b875f19bf219f7
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.16 (93fcc21110c10..., userDataDir: C:\Users\HPUSER~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62076}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 502fd0a6280c0dea3eb85ce23755ce76
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at com.ats.pages.HomePage.getHomePageHeader(HomePage.java:42)
-	at com.ats.test.HomePageTest.verifyHomePageHeader(HomePageTest.java:50)
+	at com.ats.test.HomePageTest.verifyHomePageHeader(HomePageTest.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -74,23 +88,49 @@ Session ID: 88e754bb0522f6cb69b875f19bf219f7
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageHeader -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ats.test.HomePageTest@546a03af]" name="tearDown" is-config="true" duration-ms="708" started-at="2019-12-28T02:07:37Z" finished-at="2019-12-28T02:07:38Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ats.test.HomePageTest@6ea6d14e]" name="tearDown" is-config="true" duration-ms="753" started-at="2020-01-16T05:09:00Z" finished-at="2020-01-16T05:09:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ats.test.HomePageTest@546a03af]" name="setUp" is-config="true" duration-ms="11257" started-at="2019-12-28T02:07:38Z" finished-at="2019-12-28T02:07:49Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ats.test.HomePageTest@6ea6d14e]" name="setUp" is-config="true" duration-ms="11640" started-at="2020-01-16T05:09:00Z" finished-at="2020-01-16T05:09:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTitle()[pri:1, instance:com.ats.test.HomePageTest@546a03af]" name="verifyHomePageTitle" duration-ms="43" started-at="2019-12-28T02:07:49Z" finished-at="2019-12-28T02:07:49Z">
+        <test-method status="PASS" signature="verifyHomePageTitle()[pri:1, instance:com.ats.test.HomePageTest@6ea6d14e]" name="verifyHomePageTitle" duration-ms="92" started-at="2020-01-16T05:09:12Z" finished-at="2020-01-16T05:09:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ats.test.HomePageTest@546a03af]" name="tearDown" is-config="true" duration-ms="731" started-at="2019-12-28T02:07:49Z" finished-at="2019-12-28T02:07:50Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ats.test.HomePageTest@6ea6d14e]" name="tearDown" is-config="true" duration-ms="766" started-at="2020-01-16T05:09:12Z" finished-at="2020-01-16T05:09:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ats.test.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.ats.test.LoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.ats.test.LoginPageTest@6ad5c04e]" name="setup" is-config="true" duration-ms="12316" started-at="2020-01-16T05:09:13Z" finished-at="2020-01-16T05:09:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.ats.test.LoginPageTest@6ad5c04e]" name="verifyLoginPageTitleTest" duration-ms="36" started-at="2020-01-16T05:09:25Z" description="verifying login page title" finished-at="2020-01-16T05:09:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ats.test.LoginPageTest@6ad5c04e]" name="tearDown" is-config="true" duration-ms="796" started-at="2020-01-16T05:09:25Z" finished-at="2020-01-16T05:09:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.ats.test.LoginPageTest@6ad5c04e]" name="setup" is-config="true" duration-ms="13043" started-at="2020-01-16T05:09:26Z" finished-at="2020-01-16T05:09:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="ATSLoginTest_1()[pri:3, instance:com.ats.test.LoginPageTest@6ad5c04e]" name="ATSLoginTest_1" duration-ms="919" started-at="2020-01-16T05:09:39Z" description="Check Login by entering valid username &amp; valid password" finished-at="2020-01-16T05:09:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ATSLoginTest_1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ats.test.LoginPageTest@6ad5c04e]" name="tearDown" is-config="true" duration-ms="709" started-at="2020-01-16T05:09:40Z" finished-at="2020-01-16T05:09:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ats.test.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
